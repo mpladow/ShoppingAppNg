@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -8,10 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './_shared/header/header.component';
 import { ShoppingListComponent } from './ShoppingList/shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './ShoppingList/shopping-list/shopping-list-edit/shopping-list-edit.component';
-import { RecipeListComponent } from './RecipeBook/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './RecipeBook/recipe-list/recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './RecipeBook/recipe-list/recipe-detail/recipe-detail.component';
+
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { MaterialModule } from './material.module';
+import { Browser } from 'protractor';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 
 @NgModule({
@@ -19,19 +23,24 @@ import { MaterialModule } from './material.module';
     AppComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    RecipeListComponent,
-    RecipeItemComponent,
     RecipeDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    RecipesComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
