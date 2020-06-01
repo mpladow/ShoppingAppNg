@@ -16,6 +16,7 @@ import { Browser } from 'protractor';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { SidenavComponent } from './_shared/sidenav/sidenav.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RecipesComponent } from './recipes/recipes.component';
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

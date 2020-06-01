@@ -1,6 +1,6 @@
 <div fxFlex style='padding: 1em;'>
   <div fxLayoutGap='20px' fxLayout="row" fxLayout.xs='column-reverse' fxLayout fxLayoutAlign="start stretch" >
     <app-recipe-list fxFlex="50%"></app-recipe-list>
-    <app-recipe-detail fxFlex="50%"></app-recipe-detail>
+    <app-recipe-detail [recipe]="selectedRecipe" fxFlex="50%"></app-recipe-detail>
   </div>
 </div>

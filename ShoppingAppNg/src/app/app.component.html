@@ -1,2 +1,12 @@
 <app-header></app-header>
+<mat-sidenav-container class="example-container" hasBackdrop="false">
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" position='end'>
+    Sidenav content
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
 <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

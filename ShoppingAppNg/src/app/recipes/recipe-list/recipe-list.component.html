@@ -1,5 +1,5 @@
 <mat-list>
-  <mat-list-item *ngFor="let recipe of recipes">
+  <mat-list-item *ngFor="let recipe of recipes" (click)="selectRecipe()">
     <img matListAvatar [src]=recipe.Image alt="...">
     <h3 matLine> {{recipe.Name}} </h3>
     <p matLine>
